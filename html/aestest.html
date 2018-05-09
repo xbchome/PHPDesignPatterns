@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="static/CryptoJS/rollups/aes.js"></script>
+</head>
+<body>
+
+<script>
+    // CryptoJS.AES();
+    // console.log(CryptoJS.HmacMD5('123'));
+    var key  = CryptoJS.enc.Utf8.parse('1234567896547896');  // key
+    var iv = CryptoJS.enc.Utf8.parse('1234567896541231');
+    var password=CryptoJS.enc.Utf8.parse('name=想不出&age=18&sex=男');
+    // var encrypted = CryptoJS.AES.encrypt(password,key,{iv:iv,mode:CryptoJS.mode.CBC,padding:CryptoJS.pad.Pkcs7});
+    var encrypted = CryptoJS.AES.encrypt(password, key, { iv: iv,mode:CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7});  //CryptoJS.pad.ZeroPadding
+    console.log('s',encrypted.toString());
+    var cip = encrypted.ciphertext.toString();
+    console.log(encrypted.ciphertext.toString());
+    console.log(window.btoa(encrypted)); // 转成base64
+</script>
+</body>
+</html>

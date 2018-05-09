@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // for of 循环
+    var a = ['a','b','c'];
+    for(var x of a) {
+        console.log(x);
+    }
+    /**
+     * 箭头函数
+     * (参数) => (表达式)
+     */
+
+    var fx = x=> x*x;
+    console.log(fx(2));
+
+    var fy = (x,y) => {
+        if(x>y)
+        {
+            console.log('x');
+        }else
+        {
+            console.log('y');
+        }
+    }
+
+    fy(1,2);
+</script>
+</html>
