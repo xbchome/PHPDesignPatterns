@@ -29,4 +29,6 @@ spl_autoload_register('xbc\\Loader::aoutload');  // 注册自动加载类
 //    Register::get('db');  0123oail
     print_r($db);
 
+    var_dump($_SERVER);
+
 

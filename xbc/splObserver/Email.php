@@ -26,6 +26,6 @@ class Email implements \SplObserver
 //            echo "向 {$userInfo['email']} 发送电子邮件成功。内容是：你好 {$userInfo['username']}" .
 //                "你的新密码是 {$userInfo['password']}，请妥善保管", PHP_EOL;
 //        }
-        echo "{$subject->name}您已经注册完成";
+        echo "{$subject->name}您已经注册完成"; // Design Pattern
     }
 }

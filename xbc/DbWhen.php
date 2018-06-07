@@ -19,6 +19,7 @@ class DbWhen
      */
     private function __construct()
     {
+
     }
 
     static function getInstance()
@@ -39,4 +40,5 @@ class DbWhen
     {
         echo 'test.....db';
     }
+
 }
